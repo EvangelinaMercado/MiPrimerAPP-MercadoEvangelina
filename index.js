@@ -1,20 +1,21 @@
 
 let nombreAlumno= prompt("Bienvenido PROFE, ingrese nombre del alumno");
 let nota1= parseInt(prompt("Ingrese nota1 de Perez Manuel"));
-
 let nota2= parseInt(prompt("Ingrese nota2 de Perez Manuel"));
 let suma= nota1+nota2;
 let promedio= suma/2;
+const materia=["Matemática", "Lengua", "Fisica", "Quimica", "Biologia", "Ingles","Historia","Geografia"]
+console.log(materia[3])
 
 if(nota1>=6){
-    console.log ("APROBÓ");
+    console.log ("APROBÓ PRIMER CUATRIMESTRE");
 }
 else{
-    console.log ("NO APROBÓ")
+    console.log ("NO APROBÓ PRIMER CUATRIMESTE")
 }
 
-for (let i=0; i<=5;i++){
-    console.log("NO APROBO")
+for (let i=6; i<=10;i++){
+    console.log("APROBO")
 }
 
 function sumar(){
@@ -63,3 +64,5 @@ switch(inasistencias){
         alert("DEBE REINCORPORARSE");
         break;
     }   
+
+    
