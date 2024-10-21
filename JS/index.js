@@ -1,23 +1,10 @@
-//let menu= parseInt(prompt ("Bienvenido! Seleccione 1 para ver el listado de alumnos, 2 para cargar una nota, 3 para salir"))
-//while(menu !=3){
-   // switch (menu){
-      //  case 1: 
-        //    verAlumnos()
-          //  break
-        //case 2: 
-          //  cargarNotas()
-            //break
-        //default: 
-          //  alert ("OPCION INCORRECTA")     
-            //break
-      //}
-//let menu= parseInt(prompt ("Bienvenido! Seleccione 1 para ver el listado de alumnos, 2 para cargar una nota, 3 para salir"))
+prompt("BIENVENIDOS A NUESTRA APP DE NOTAS")
+let nombreAlumno= prompt ("Ingrese nombre del Alumno");
+let nota1= parseInt(prompt("Ingrese nota del primer parcial"));
+let nota2= parseInt(prompt("Ingrese nota del segundo parcial"));
+let nota3= parseInt(prompt("Ingrese nota del recuperatorio"));
+let inasistencias= parseInt(prompt("Cuántas faltas tuvo el alumno?"));
 
-//
-
-let nota1= parseInt(prompt("Ingrese nota1 de Perez Manuel"));
-let nota2= parseInt(prompt("Ingrese nota2 de Perez Manuel"));
-let nota3= parseInt(prompt("Ingrese nota3 de Perez Manuel"));
 let suma= nota1+nota2+nota3;
 let a=nota1;
 let b=nota2;
@@ -25,6 +12,21 @@ let c=nota3;
 let promedio= suma/3;
 
 const notas= [nota1,nota2,nota3]
+console.table(notas)
+
+let añadirNota=true
+while(añadirNota){
+    let nota4= parseInt(prompt("Ingrese Nota Examen Final "));
+    
+        if(nota4 >=0 && nota4<=10) {
+        notas.push (nota4);
+        } 
+        let salir= prompt("escriba salir para terminar")
+        if (salir =="salir"){
+            añadirNota=false
+            prompt("Gracias Profe")
+            }
+}
 console.table(notas)
 
 
@@ -35,15 +37,14 @@ else{
     console.log ("NO APROBÓ PRIMER CUATRIMESTE")
 }
 
-for (let i=6; i<=10;i++){
-    console.log("APROBO")
+for (let nota4=6; nota4<=10; nota4++){
+    console.log("APROBO EXAMEN FINAL")
 }
 
 function sumar(a,b,c){
     return a+b+c;
 }
 console.log (sumar(nota1,nota2,nota3))
-
 
 
 function promediar(x,y){
@@ -58,25 +59,24 @@ else{
     console.log ("RINDE EXAMEN FINAL")
 }
 
+
 function informar (nombre, inasistencias){
     console.log ("El alumno "+ nombre +" tuvo en el año "+ inasistencias +" faltas");
 }
-informar ("Perez",5)
-
-let inasistencias= parseInt(prompt("Cuántas faltas tuvo el alumno Perez?"))
+informar (nombreAlumno,inasistencias)
 
 switch(inasistencias){
     case 1:
-        alert("OK");
+        alert("INASISTENCIAS OK");
         break;
     case 2:
-        alert("OK");
+        alert(" INASISTENCIAS OK");
         break;    
     case 3:
-        alert("OK");
+        alert("INASISTENCIAS OK");
         break;
     case 4:
-        alert("OK");
+        alert(" INASISTENIAS OK");
         break;   
     default:
         alert("DEBE REINCORPORARSE");
