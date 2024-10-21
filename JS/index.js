@@ -1,11 +1,32 @@
+//let menu= parseInt(prompt ("Bienvenido! Seleccione 1 para ver el listado de alumnos, 2 para cargar una nota, 3 para salir"))
+//while(menu !=3){
+   // switch (menu){
+      //  case 1: 
+        //    verAlumnos()
+          //  break
+        //case 2: 
+          //  cargarNotas()
+            //break
+        //default: 
+          //  alert ("OPCION INCORRECTA")     
+            //break
+      //}
+//let menu= parseInt(prompt ("Bienvenido! Seleccione 1 para ver el listado de alumnos, 2 para cargar una nota, 3 para salir"))
 
-let nombreAlumno= prompt("Bienvenido PROFE, ingrese nombre del alumno");
+//
+
 let nota1= parseInt(prompt("Ingrese nota1 de Perez Manuel"));
 let nota2= parseInt(prompt("Ingrese nota2 de Perez Manuel"));
-let suma= nota1+nota2;
-let promedio= suma/2;
-const materia=["Matemática", "Lengua", "Fisica", "Quimica", "Biologia", "Ingles","Historia","Geografia"]
-console.log(materia[3])
+let nota3= parseInt(prompt("Ingrese nota3 de Perez Manuel"));
+let suma= nota1+nota2+nota3;
+let a=nota1;
+let b=nota2;
+let c=nota3;
+let promedio= suma/3;
+
+const notas= [nota1,nota2,nota3]
+console.table(notas)
+
 
 if(nota1>=6){
     console.log ("APROBÓ PRIMER CUATRIMESTRE");
@@ -18,20 +39,17 @@ for (let i=6; i<=10;i++){
     console.log("APROBO")
 }
 
-function sumar(){
-    let nota1=6;
-    let nota2=8;
-    let resultado= nota1+nota2;
-    return resultado;
+function sumar(a,b,c){
+    return a+b+c;
 }
-console.log (sumar());
+console.log (sumar(nota1,nota2,nota3))
 
-function dividir(){
-    let resultado= suma;
-    let promedio= resultado/2;
-    return promedio;
+
+
+function promediar(x,y){
+        return x/y;
 }
-console.log (dividir());
+console.log ("su promedio es "+ promediar(suma,3));
 
 if (promedio>= 7){
     console.log ("PROMOCIONO LA MATERIA")
@@ -64,5 +82,3 @@ switch(inasistencias){
         alert("DEBE REINCORPORARSE");
         break;
     }   
-
-    
