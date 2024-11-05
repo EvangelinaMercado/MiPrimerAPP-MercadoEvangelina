@@ -1,4 +1,4 @@
-prompt("BIENVENIDOS A NUESTRA APP DE NOTAS")
+alert("BIENVENIDOS A NUESTRA APP DE NOTAS")
 let nombreAlumno= prompt ("Ingrese nombre del Alumno");
 let nota1= parseInt(prompt("Ingrese nota del primer parcial"));
 let nota2= parseInt(prompt("Ingrese nota del segundo parcial"));
@@ -24,7 +24,7 @@ while(añadirNota){
         let salir= prompt("escriba salir para terminar")
         if (salir =="salir"){
             añadirNota=false
-            prompt("Gracias Profe")
+            alert ("gracias Profe")
             }
 }
 console.table(notas)

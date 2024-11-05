@@ -3,14 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css">
     <script defer src="./JS/index.js"></script>
     <title>Mi Primer APP</title>
   </head>
   <body>
+    <header class="index">
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="#INICIO">INICIO</a>
+          </li>
+          <li>
+            <a href="#CARGADENOTAS">CARGA DE NOTAS</a>
+          </li>
+          <li>
+            <a href="#cCONDICION">CONDICION ALUMNO</a>
+          </li>
+          <li>
+            <a href="ASISTENCIA">ASISTENCIA</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      
     <h1>Estan las notas APP</h1>
     <p>
       Esta App permitirá informar las notas y condicion de alumnos en base a la
       información que suministren los Profesores del Colegio
     </p>
+    <form action="">
+      <input type="text"> APELLIDO ALUMNO
+      <input type="text"> NOMBRE ALUMNO
+      <input type="text"> MATERIA A CALIFICAR
+      <input type="text"> NOTA PRIMER CUATRIMESTRE
+      <input type="text"> NOTA SEGUNDO CUATRIMESTRE
+      <input type="text"> NOTA FINAL
+      <select name="" id=""> CONDICION ALUMNO
+        <option value="">REGULAR</option>
+        <option value="">PROMOCIONA</option>
+        <option value="">LIBRE</option>
+      </select>
+    </form>
+  </section>
   </body>
 </html>

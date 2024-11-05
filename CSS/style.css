@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 15px;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(147, 137, 210);
+    background-size: auto;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+  }
+  .index {
+    background-image: url(../images/profeMenu.jpg);
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
