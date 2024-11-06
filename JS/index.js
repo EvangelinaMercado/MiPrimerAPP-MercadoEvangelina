@@ -1,8 +1,51 @@
-let nombreAlumno= document.getElementById(nombreAlumno);
-let nota1= document.getElementById(nota1);
-let nota2= document.getElementById(nota2);
-let nota3= document.getElementById(notaFinal);
-inasistencias= document.getElementById(inasistencias);
+
+const materias= [
+    {       
+        materia: "matematica",
+        nota1:9,
+        nota2:8,
+        nota3:10,
+    },
+    {
+        materia: "sic",
+        nota1: 7,
+        nota2: 9,
+        nota3: 7,
+    },
+    {
+        materia: "estadistica",
+        nota1: 6,
+        nota2: 8,
+        nota3:4,
+    },
+    {
+        materia:"economia",
+        nota1: 9,
+        nota2: 6,
+        nota3:5,
+    }
+
+            
+]
+
+function informarNotas(materias){
+    const contenedor=document.getElementById("libretaPerez")
+    for(const materia of materias){
+        const card=document.createElement("div")
+        card.innerHTML=`<h2>${materia.materia}</h2>
+                        <h3>${materia.nota1}</h3>
+                        <h3>${materia.nota2}</h3>
+                        <h3>${materia.nota3}</h3>`
+        contenedor.appendChild(card)
+    }
+    
+}
+informarNotas(materias)
+
+const aprobado=materias.filter((materia)=>materia.nota3 >5)
+
+const economia=materias.map(materia=>materia.economia)
+console.log(economia)
 
 let suma= nota1+nota2+nota3;
 let a=nota1;
